@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KamCo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banner-equine" translatesAutoresizingMaskIntoConstraints="NO" id="182-sE-sn6">
+                                <rect key="frame" x="300" y="39" width="260" height="120"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RlI-Rf-05M">
+                                <rect key="frame" x="172" y="421" width="158" height="35"/>
+                                <state key="normal" title="Equine Listing"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldE-wi-yfD">
+                                <rect key="frame" x="172" y="493" width="158" height="35"/>
+                                <state key="normal" title="Equine Auction"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="182-sE-sn6" secondAttribute="trailing" constant="20" id="6Dr-OK-PjV"/>
+                            <constraint firstItem="182-sE-sn6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="39" id="7De-hb-RXs"/>
+                            <constraint firstItem="182-sE-sn6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="280" id="Ud7-2O-Oar"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="182-sE-sn6" secondAttribute="bottom" constant="641" id="n2z-ms-XaS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6Dr-OK-PjV"/>
+                                <exclude reference="7De-hb-RXs"/>
+                                <exclude reference="Ud7-2O-Oar"/>
+                                <exclude reference="n2z-ms-XaS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="6Dr-OK-PjV"/>
+                                <include reference="7De-hb-RXs"/>
+                                <include reference="Ud7-2O-Oar"/>
+                                <include reference="n2z-ms-XaS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="301"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banner-equine" width="960" height="345"/>
+    </resources>
+</document>

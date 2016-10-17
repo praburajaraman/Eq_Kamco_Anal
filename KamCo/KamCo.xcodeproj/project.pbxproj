@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1004D0F41DB31B180059AA5F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1004D0F31DB31B180059AA5F /* CoreData.framework */; };
+		1004D0F61DB31B280059AA5F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1004D0F51DB31B280059AA5F /* AVFoundation.framework */; };
+		1004D0F81DB31B380059AA5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1004D0F71DB31B380059AA5F /* CoreGraphics.framework */; };
+		1004D0FA1DB31B570059AA5F /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1004D0F91DB31B570059AA5F /* libsqlite3.0.tbd */; };
+		1004D0FD1DB326380059AA5F /* EquineImageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1004D0FC1DB326380059AA5F /* EquineImageAssets.xcassets */; };
+		1004D1021DB46CE50059AA5F /* EquineListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004D1011DB46CE50059AA5F /* EquineListingViewController.swift */; };
+		1004D1051DB46D0A0059AA5F /* EquineAuctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004D1041DB46D0A0059AA5F /* EquineAuctionViewController.swift */; };
+		105D6AF11DABBCD70015453B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D6AF01DABBCD70015453B /* AppDelegate.swift */; };
+		105D6AF31DABBCD70015453B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D6AF21DABBCD70015453B /* ViewController.swift */; };
+		105D6AF61DABBCD70015453B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105D6AF41DABBCD70015453B /* Main.storyboard */; };
+		105D6AF91DABBCD70015453B /* KamCo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 105D6AF71DABBCD70015453B /* KamCo.xcdatamodeld */; };
+		105D6AFB1DABBCD70015453B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105D6AFA1DABBCD70015453B /* Assets.xcassets */; };
+		105D6AFE1DABBCD70015453B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105D6AFC1DABBCD70015453B /* LaunchScreen.storyboard */; };
+		105D6B091DABBCD70015453B /* KamCoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D6B081DABBCD70015453B /* KamCoTests.swift */; };
+		105D6B141DABBCD70015453B /* KamCoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105D6B131DABBCD70015453B /* KamCoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		105D6B051DABBCD70015453B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105D6AE51DABBCD70015453B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 105D6AEC1DABBCD70015453B;
+			remoteInfo = KamCo;
+		};
+		105D6B101DABBCD70015453B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 105D6AE51DABBCD70015453B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 105D6AEC1DABBCD70015453B;
+			remoteInfo = KamCo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1004D0F31DB31B180059AA5F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1004D0F51DB31B280059AA5F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1004D0F71DB31B380059AA5F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1004D0F91DB31B570059AA5F /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		1004D0FC1DB326380059AA5F /* EquineImageAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = EquineImageAssets.xcassets; path = ../EquineImageAssets.xcassets; sourceTree = "<group>"; };
+		1004D1011DB46CE50059AA5F /* EquineListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquineListingViewController.swift; sourceTree = "<group>"; };
+		1004D1041DB46D0A0059AA5F /* EquineAuctionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquineAuctionViewController.swift; sourceTree = "<group>"; };
+		105D6AED1DABBCD70015453B /* KamCo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KamCo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		105D6AF01DABBCD70015453B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		105D6AF21DABBCD70015453B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		105D6AF51DABBCD70015453B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		105D6AF81DABBCD70015453B /* KamCo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KamCo.xcdatamodel; sourceTree = "<group>"; };
+		105D6AFA1DABBCD70015453B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		105D6AFD1DABBCD70015453B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		105D6AFF1DABBCD70015453B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		105D6B041DABBCD70015453B /* KamCoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KamCoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		105D6B081DABBCD70015453B /* KamCoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamCoTests.swift; sourceTree = "<group>"; };
+		105D6B0A1DABBCD70015453B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		105D6B0F1DABBCD70015453B /* KamCoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KamCoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		105D6B131DABBCD70015453B /* KamCoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KamCoUITests.swift; sourceTree = "<group>"; };
+		105D6B151DABBCD70015453B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		105D6AEA1DABBCD70015453B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1004D0FA1DB31B570059AA5F /* libsqlite3.0.tbd in Frameworks */,
+				1004D0F81DB31B380059AA5F /* CoreGraphics.framework in Frameworks */,
+				1004D0F61DB31B280059AA5F /* AVFoundation.framework in Frameworks */,
+				1004D0F41DB31B180059AA5F /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105D6B011DABBCD70015453B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105D6B0C1DABBCD70015453B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1004D0ED1DB314240059AA5F /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				105D6AF01DABBCD70015453B /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		1004D0EE1DB3143E0059AA5F /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				105D6AF21DABBCD70015453B /* ViewController.swift */,
+			);
+			name = BaseViewController;
+			sourceTree = "<group>";
+		};
+		1004D0EF1DB314670059AA5F /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		1004D0F01DB3147F0059AA5F /* DataViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataViewController;
+			sourceTree = "<group>";
+		};
+		1004D0F11DB314A00059AA5F /* GraphViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GraphViewController;
+			sourceTree = "<group>";
+		};
+		1004D0F21DB314C00059AA5F /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		1004D0FB1DB3243D0059AA5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1004D0F91DB31B570059AA5F /* libsqlite3.0.tbd */,
+				1004D0F71DB31B380059AA5F /* CoreGraphics.framework */,
+				1004D0F51DB31B280059AA5F /* AVFoundation.framework */,
+				1004D0F31DB31B180059AA5F /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1004D0FE1DB326490059AA5F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1004D0FC1DB326380059AA5F /* EquineImageAssets.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		1004D0FF1DB46CB70059AA5F /* EquineLisiting */ = {
+			isa = PBXGroup;
+			children = (
+				1004D1011DB46CE50059AA5F /* EquineListingViewController.swift */,
+			);
+			name = EquineLisiting;
+			sourceTree = "<group>";
+		};
+		1004D1001DB46CC00059AA5F /* EquineAuction */ = {
+			isa = PBXGroup;
+			children = (
+				1004D1041DB46D0A0059AA5F /* EquineAuctionViewController.swift */,
+			);
+			name = EquineAuction;
+			sourceTree = "<group>";
+		};
+		105D6AE41DABBCD60015453B = {
+			isa = PBXGroup;
+			children = (
+				1004D0FB1DB3243D0059AA5F /* Frameworks */,
+				105D6AEF1DABBCD70015453B /* KamCo */,
+				105D6B071DABBCD70015453B /* KamCoTests */,
+				105D6B121DABBCD70015453B /* KamCoUITests */,
+				105D6AEE1DABBCD70015453B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		105D6AEE1DABBCD70015453B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				105D6AED1DABBCD70015453B /* KamCo.app */,
+				105D6B041DABBCD70015453B /* KamCoTests.xctest */,
+				105D6B0F1DABBCD70015453B /* KamCoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		105D6AEF1DABBCD70015453B /* KamCo */ = {
+			isa = PBXGroup;
+			children = (
+				1004D1001DB46CC00059AA5F /* EquineAuction */,
+				1004D0FF1DB46CB70059AA5F /* EquineLisiting */,
+				1004D0FE1DB326490059AA5F /* Images */,
+				1004D0F21DB314C00059AA5F /* DataModel */,
+				1004D0F11DB314A00059AA5F /* GraphViewController */,
+				1004D0F01DB3147F0059AA5F /* DataViewController */,
+				1004D0EF1DB314670059AA5F /* Database */,
+				1004D0EE1DB3143E0059AA5F /* BaseViewController */,
+				1004D0ED1DB314240059AA5F /* App Delegate */,
+				105D6AF41DABBCD70015453B /* Main.storyboard */,
+				105D6AFA1DABBCD70015453B /* Assets.xcassets */,
+				105D6AFC1DABBCD70015453B /* LaunchScreen.storyboard */,
+				105D6AFF1DABBCD70015453B /* Info.plist */,
+				105D6AF71DABBCD70015453B /* KamCo.xcdatamodeld */,
+			);
+			path = KamCo;
+			sourceTree = "<group>";
+		};
+		105D6B071DABBCD70015453B /* KamCoTests */ = {
+			isa = PBXGroup;
+			children = (
+				105D6B081DABBCD70015453B /* KamCoTests.swift */,
+				105D6B0A1DABBCD70015453B /* Info.plist */,
+			);
+			path = KamCoTests;
+			sourceTree = "<group>";
+		};
+		105D6B121DABBCD70015453B /* KamCoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				105D6B131DABBCD70015453B /* KamCoUITests.swift */,
+				105D6B151DABBCD70015453B /* Info.plist */,
+			);
+			path = KamCoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		105D6AEC1DABBCD70015453B /* KamCo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 105D6B181DABBCD70015453B /* Build configuration list for PBXNativeTarget "KamCo" */;
+			buildPhases = (
+				105D6AE91DABBCD70015453B /* Sources */,
+				105D6AEA1DABBCD70015453B /* Frameworks */,
+				105D6AEB1DABBCD70015453B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KamCo;
+			productName = KamCo;
+			productReference = 105D6AED1DABBCD70015453B /* KamCo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		105D6B031DABBCD70015453B /* KamCoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 105D6B1B1DABBCD70015453B /* Build configuration list for PBXNativeTarget "KamCoTests" */;
+			buildPhases = (
+				105D6B001DABBCD70015453B /* Sources */,
+				105D6B011DABBCD70015453B /* Frameworks */,
+				105D6B021DABBCD70015453B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				105D6B061DABBCD70015453B /* PBXTargetDependency */,
+			);
+			name = KamCoTests;
+			productName = KamCoTests;
+			productReference = 105D6B041DABBCD70015453B /* KamCoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		105D6B0E1DABBCD70015453B /* KamCoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 105D6B1E1DABBCD70015453B /* Build configuration list for PBXNativeTarget "KamCoUITests" */;
+			buildPhases = (
+				105D6B0B1DABBCD70015453B /* Sources */,
+				105D6B0C1DABBCD70015453B /* Frameworks */,
+				105D6B0D1DABBCD70015453B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				105D6B111DABBCD70015453B /* PBXTargetDependency */,
+			);
+			name = KamCoUITests;
+			productName = KamCoUITests;
+			productReference = 105D6B0F1DABBCD70015453B /* KamCoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		105D6AE51DABBCD70015453B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Sathiya Macbook";
+				TargetAttributes = {
+					105D6AEC1DABBCD70015453B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					105D6B031DABBCD70015453B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 105D6AEC1DABBCD70015453B;
+					};
+					105D6B0E1DABBCD70015453B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 105D6AEC1DABBCD70015453B;
+					};
+				};
+			};
+			buildConfigurationList = 105D6AE81DABBCD70015453B /* Build configuration list for PBXProject "KamCo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 105D6AE41DABBCD60015453B;
+			productRefGroup = 105D6AEE1DABBCD70015453B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				105D6AEC1DABBCD70015453B /* KamCo */,
+				105D6B031DABBCD70015453B /* KamCoTests */,
+				105D6B0E1DABBCD70015453B /* KamCoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		105D6AEB1DABBCD70015453B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105D6AFE1DABBCD70015453B /* LaunchScreen.storyboard in Resources */,
+				105D6AFB1DABBCD70015453B /* Assets.xcassets in Resources */,
+				105D6AF61DABBCD70015453B /* Main.storyboard in Resources */,
+				1004D0FD1DB326380059AA5F /* EquineImageAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105D6B021DABBCD70015453B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105D6B0D1DABBCD70015453B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		105D6AE91DABBCD70015453B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1004D1021DB46CE50059AA5F /* EquineListingViewController.swift in Sources */,
+				105D6AF31DABBCD70015453B /* ViewController.swift in Sources */,
+				105D6AF91DABBCD70015453B /* KamCo.xcdatamodeld in Sources */,
+				1004D1051DB46D0A0059AA5F /* EquineAuctionViewController.swift in Sources */,
+				105D6AF11DABBCD70015453B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105D6B001DABBCD70015453B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105D6B091DABBCD70015453B /* KamCoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		105D6B0B1DABBCD70015453B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				105D6B141DABBCD70015453B /* KamCoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		105D6B061DABBCD70015453B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 105D6AEC1DABBCD70015453B /* KamCo */;
+			targetProxy = 105D6B051DABBCD70015453B /* PBXContainerItemProxy */;
+		};
+		105D6B111DABBCD70015453B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 105D6AEC1DABBCD70015453B /* KamCo */;
+			targetProxy = 105D6B101DABBCD70015453B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		105D6AF41DABBCD70015453B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				105D6AF51DABBCD70015453B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		105D6AFC1DABBCD70015453B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				105D6AFD1DABBCD70015453B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		105D6B161DABBCD70015453B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		105D6B171DABBCD70015453B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		105D6B191DABBCD70015453B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KamCo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TestUniversalCollection.KamCo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		105D6B1A1DABBCD70015453B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KamCo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TestUniversalCollection.KamCo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		105D6B1C1DABBCD70015453B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KamCoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TestUniversalCollection.KamCoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KamCo.app/KamCo";
+			};
+			name = Debug;
+		};
+		105D6B1D1DABBCD70015453B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = KamCoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TestUniversalCollection.KamCoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KamCo.app/KamCo";
+			};
+			name = Release;
+		};
+		105D6B1F1DABBCD70015453B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KamCoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TestUniversalCollection.KamCoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KamCo;
+			};
+			name = Debug;
+		};
+		105D6B201DABBCD70015453B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = KamCoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.TestUniversalCollection.KamCoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KamCo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		105D6AE81DABBCD70015453B /* Build configuration list for PBXProject "KamCo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105D6B161DABBCD70015453B /* Debug */,
+				105D6B171DABBCD70015453B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		105D6B181DABBCD70015453B /* Build configuration list for PBXNativeTarget "KamCo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105D6B191DABBCD70015453B /* Debug */,
+				105D6B1A1DABBCD70015453B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		105D6B1B1DABBCD70015453B /* Build configuration list for PBXNativeTarget "KamCoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105D6B1C1DABBCD70015453B /* Debug */,
+				105D6B1D1DABBCD70015453B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		105D6B1E1DABBCD70015453B /* Build configuration list for PBXNativeTarget "KamCoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105D6B1F1DABBCD70015453B /* Debug */,
+				105D6B201DABBCD70015453B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		105D6AF71DABBCD70015453B /* KamCo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				105D6AF81DABBCD70015453B /* KamCo.xcdatamodel */,
+			);
+			currentVersion = 105D6AF81DABBCD70015453B /* KamCo.xcdatamodel */;
+			path = KamCo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 105D6AE51DABBCD70015453B /* Project object */;
+}
